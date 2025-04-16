@@ -10,4 +10,6 @@ public class EWalledApplication {
 		SpringApplication.run(EWalledApplication.class, args);
 	}
 
+	
+
 }
