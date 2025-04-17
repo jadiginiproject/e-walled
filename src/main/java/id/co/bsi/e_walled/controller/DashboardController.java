@@ -65,3 +65,8 @@ public class DashboardController {
         return ResponseEntity.ok(listTransaction);
     }
 }
+
+// request masuk akan dihandle sama controller -> masuk ke repository layer -> masuk ke database
+// sebelum repository, masuk dulu ke service layer. repository harusnya isolated dan gabisa dipanggil langsung oleh controller
+// fungsi dari kontroller adalah untuk presentation layer -> layar paling depan untuk nerima dan ngirim request. gaboleh ada business logic
+// pastiin steril. tugasnya cuma nerima dan ngirim response
